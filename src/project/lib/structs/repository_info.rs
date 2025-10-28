@@ -5,7 +5,6 @@ mod new;
 
 pub struct RepositoryInfo {
     name: String,
-    author: AuthorInfo,
     branches: Branches,
-    repository: Repository,
+    repo: Repository,
 }
