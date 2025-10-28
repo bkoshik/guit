@@ -1,6 +1,6 @@
 [package]
 name = "guit"
-version = "0.1.0"
+version = "0.1.0-alpha"
 edition = "2024"
 readme = "README.md"
 repository = "https://github.com/bkoshik/guit"

@@ -1,6 +1,6 @@
-use std::error::Error;
-use git2::BranchType;
 use crate::Branches;
+use git2::BranchType;
+use std::error::Error;
 
 impl Branches {
     pub fn new(repo: &git2::Repository) -> Result<Self, Box<dyn Error>> {
