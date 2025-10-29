@@ -18,18 +18,16 @@ mod project {
             pub(crate) mod helpers {
                 mod find_branches;
                 mod result;
-                
+
                 pub use find_branches::*;
                 pub use result::*;
             }
             pub mod log {
                 mod branches;
-                mod date;
                 mod head;
                 mod tags;
 
                 pub use branches::*;
-                pub use date::*;
                 pub use head::*;
                 pub use tags::*;
             }
