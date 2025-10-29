@@ -3,22 +3,10 @@ use git2::BranchType;
 use std::error::Error;
 
 impl Branches {
-    pub fn new(repo: &git2::Repository) -> Result<Self, Box<dyn Error>> {
+    pub fn new(local: Vec<String>, remote: Vec<String>) -> Result<Self, Box<dyn Error>> {
         Ok(Self {
-            local: get_branch_name(repo.branches(Some(BranchType::Local))?)?,
-            remote: get_branch_name(repo.branches(Some(BranchType::Remote))?)?,
+            local,
+            remote
         })
     }
-}
-
-fn get_branch_name(branches: git2::Branches) -> Result<Vec<String>, Box<dyn Error>> {
-    let mut branch_names = Vec::new();
-    for branch in branches {
-        let (branch, _) = branch?;
-        if let Some(name) = branch.name()? {
-            branch_names.push(name.to_string());
-        }
-    }
-
-    Ok(branch_names)
 }

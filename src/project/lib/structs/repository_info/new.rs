@@ -7,17 +7,13 @@ impl RepositoryInfo {
         let name = repo
             .path()
             .parent()
-            .unwrap_or("".as_ref())
-            .file_name()
-            .unwrap_or("".as_ref())
-            .to_str()
-            .map(|s| s.to_string())
-            .unwrap_or("".to_string());
-        let branches = Branches::new(&repo)?;
+            .and_then(|p| p.file_name())
+            .and_then(|n| n.to_str())
+            .unwrap_or("")
+            .to_string();
 
         Ok(Self {
             name,
-            branches,
             repo,
         })
     }
