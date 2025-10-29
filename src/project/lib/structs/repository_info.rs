@@ -7,6 +7,10 @@ mod commands {
     }
     mod status {}
 }
+mod get {
+    mod name;
+    mod repo;
+}
 mod new;
 
 pub struct RepositoryInfo {
