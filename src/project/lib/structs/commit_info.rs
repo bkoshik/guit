@@ -1,8 +1,8 @@
 mod get {
-    mod id;
     mod author;
     mod branches;
     mod date;
+    mod id;
     mod is_head;
     mod message;
     mod parents;
@@ -10,17 +10,17 @@ mod get {
 }
 mod new;
 
-use std::time::SystemTime;
-use git2::Oid;
 use crate::{AuthorInfo, Branches, Message};
+use git2::Oid;
+use std::time::SystemTime;
 
 pub struct CommitInfo {
-    pub id: Oid,
-    pub author: AuthorInfo,
-    pub branches: Branches,
-    pub date: SystemTime,
-    pub is_head: bool,
-    pub message: Message,
-    pub parents: Vec<Oid>,
-    pub tags: Vec<String>,
+    id: Oid,
+    author: AuthorInfo,
+    branches: Branches,
+    date: SystemTime,
+    is_head: bool,
+    message: Message,
+    parents: Vec<Oid>,
+    tags: Vec<String>,
 }
