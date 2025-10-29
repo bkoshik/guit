@@ -1,4 +1,4 @@
-use crate::{Branches, RepositoryInfo};
+use crate::RepositoryInfo;
 use git2::Repository;
 use std::error::Error;
 

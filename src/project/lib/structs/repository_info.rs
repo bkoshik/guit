@@ -1,4 +1,3 @@
-use crate::Branches;
 use git2::Repository;
 
 mod commands {

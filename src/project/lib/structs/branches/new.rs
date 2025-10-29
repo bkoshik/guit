@@ -1,5 +1,4 @@
 use crate::Branches;
-use git2::BranchType;
 use std::error::Error;
 
 impl Branches {
