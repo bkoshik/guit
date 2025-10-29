@@ -1,3 +1,7 @@
+mod get {
+    mod name;
+    mod email;
+}
 mod new;
 mod from;
 mod display;
