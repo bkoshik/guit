@@ -13,14 +13,14 @@ impl CommitInfo {
         let date = UNIX_EPOCH + Duration::from_secs(commit.time().seconds() as u64);
         let is_head = log::head(repo, commit.id())?;
         let message = Message::new(
-            commit.summary().unwrap_or(NO_MESSAGE), 
+            commit.summary().unwrap_or(NO_MESSAGE),
             commit.message().unwrap_or(NO_MESSAGE)
         );
         let parents = commit.parents()
             .map(|parent| parent.id())
             .collect();
         let tags = log::tags(repo, commit.id())?;
-        
+
         Ok(CommitInfo {
             id,
             author,

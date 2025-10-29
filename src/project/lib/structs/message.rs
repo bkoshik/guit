@@ -1,10 +1,10 @@
 mod get {
     mod summary;
-    mod description;
+    mod message;
 }
 mod new;
 
 pub struct Message {
     summary: String,
-    description: String,
+    message: String,
 }
