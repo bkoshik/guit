@@ -1,7 +1,7 @@
 use crate::Message;
 
 impl Message {
-    pub fn description(&self) -> String {
-        self.description.clone()
+    pub fn description(&self) -> &str {
+        &self.description
     }
 }
