@@ -24,10 +24,12 @@ mod project {
             }
             pub mod log {
                 mod branches;
+                mod commit;
                 mod head;
                 mod tags;
 
                 pub use branches::*;
+                pub use commit::*;
                 pub use head::*;
                 pub use tags::*;
             }
