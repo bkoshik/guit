@@ -8,6 +8,11 @@
 - Add `FileStatusEntry` struct
 - Add getter methods to `FileStatusEntry`
 - Add `FileStatusEntry::new()` method
+- Add `TryFrom<git2::Repository>` implementation for `RepositoryInfo`
+
+### Changed
+
+- `RepositoryInfo::new()` takes `Path` as argument
 
 ### Fixed
 

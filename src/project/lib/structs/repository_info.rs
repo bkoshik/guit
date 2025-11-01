@@ -11,6 +11,7 @@ mod get {
     mod repo;
 }
 mod new;
+mod try_from;
 
 pub struct RepositoryInfo {
     name: String,
