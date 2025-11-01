@@ -11,7 +11,7 @@ impl RepositoryInfo {
             let commit_id = commit_id?;
             let commit = self.repo.find_commit(commit_id)?;
 
-            commits.push(utils::log::commit(&commit, &self.repo)?);
+            commits.push(utils::commands::commit(&commit, &self.repo)?);
         }
 
         Ok(commits)

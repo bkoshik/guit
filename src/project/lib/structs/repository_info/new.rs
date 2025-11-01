@@ -12,9 +12,6 @@ impl RepositoryInfo {
             .unwrap_or("")
             .to_string();
 
-        Ok(Self {
-            name,
-            repo,
-        })
+        Ok(Self { name, repo })
     }
 }

@@ -1,10 +1,11 @@
 mod get {
-    mod name;
     mod email;
+    mod name;
 }
-mod new;
-mod from;
 mod display;
+mod from;
+mod new;
+mod to_signature;
 
 pub struct AuthorInfo {
     name: String,

@@ -1,7 +1,11 @@
 use crate::utils::helpers::Result;
 use git2::{BranchType, Oid, Repository};
 
-pub fn find_branches(repo: &Repository, commit_id: Oid, branch_type: BranchType) -> Result<Vec<String>> {
+pub fn find_branches(
+    repo: &Repository,
+    commit_id: Oid,
+    branch_type: BranchType,
+) -> Result<Vec<String>> {
     let mut branches: Vec<String> = Vec::new();
 
     for branch in repo.branches(Some(branch_type))? {

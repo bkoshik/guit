@@ -1,7 +1,8 @@
 mod get {
-    mod summary;
     mod message;
+    mod summary;
 }
+mod display;
 mod new;
 
 pub struct Message {

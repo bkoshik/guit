@@ -22,7 +22,7 @@ mod project {
                 pub use find_branches::*;
                 pub use result::*;
             }
-            pub mod log {
+            pub mod commands {
                 mod branches;
                 mod commit;
                 mod head;
@@ -37,7 +37,6 @@ mod project {
 
         pub use structs::*;
     }
-    pub mod consts;
 
     pub use lib::*;
 }

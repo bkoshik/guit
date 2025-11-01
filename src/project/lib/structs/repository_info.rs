@@ -1,11 +1,10 @@
 use git2::Repository;
 
 mod commands {
-    mod commit {}
-    mod log {
-        mod log;
-    }
-    mod status {}
+    mod add_files;
+    mod commit_changes;
+    mod log;
+    mod remove_files;
 }
 mod get {
     mod name;
