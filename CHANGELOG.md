@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+### Added
+
+- Add `FileStatusKind` enum
+- Add `FileStatusEntry` struct
+- Add getter methods to `FileStatusEntry`
+- Add `FileStatusEntry::new()` method
+
+### Fixed
+
+- Fix dates in `CHANGELOG.md`
+
 ## [0.1.0-alpha.5] - 2025-10-31
 
 ### Added
@@ -27,7 +38,7 @@
 
 - Remove `consts.rs`
 
-## [0.1.0-alpha.4] - 2024/10/29
+## [0.1.0-alpha.4] - 2025/10/29
 
 ### Added
 
@@ -43,7 +54,7 @@
 
 - Change getter methods to return references instead of clones
 
-## [0.1.0-alpha.3]
+## [0.1.0-alpha.3] - 2025/10/29
 
 ### Added
 
@@ -60,7 +71,7 @@
         - Add `head.rs`
         - Add `tags.rs`
 
-## [0.1.0-alpha]
+## [0.1.0-alpha] - 2025/10/28
 
 ### Added
 
