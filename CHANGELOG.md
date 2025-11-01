@@ -9,6 +9,7 @@
 - Add getter methods to `FileStatusEntry`
 - Add `FileStatusEntry::new()` method
 - Add `TryFrom<git2::Repository>` implementation for `RepositoryInfo`
+- Add `RepositoryInfo::push()` method
 
 ### Changed
 

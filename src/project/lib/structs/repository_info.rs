@@ -4,6 +4,7 @@ mod commands {
     mod add_files;
     mod commit_changes;
     mod log;
+    mod push;
     mod remove_files;
 }
 mod get {
